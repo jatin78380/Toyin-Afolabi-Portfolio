@@ -11,10 +11,10 @@ export const Navbar = () => {
           <img className="mx-2 w-10 rounded"  alt="logo"/> 
         </div>
         <div className="m-8 flex itens-center justify-center gap-4 text-2xl">
-         <a href="https://www.linkedin.com/in/toyin-afolabi-/" target="_blank">
+         <a href="https://www.linkedin.com/in/toyin-afolabi-/" className="text-blue-600" target="_blank">
           <FaLinkedin />
           </a>
-          <a href="https://www.facebook.com/toyin.afolabi.92" target="_blank">
+          <a href="https://www.facebook.com/toyin.afolabi.92" className="text-blue-500" target="_blank">
           <FaFacebook/>
           </a>
 

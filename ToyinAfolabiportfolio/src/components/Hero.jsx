@@ -33,7 +33,8 @@ export const Hero = () => {
             className=" text-xl text-indigo-600 pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-6xl">Toyin Afolabi </motion.h1>
             <motion.span  variants={container(1)}
             initial="hidden"
-            animate="visible" className="bg-gradient-to-r from-pink-300 via slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent">Social Media Manager</motion.span>
+            animate="visible" className="bg-gradient-to-r from-pink-300 via slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent">Social Media Manager / Digital Startegist | Web3 Educator | Coach.
+</motion.span>
             < motion.p  variants={container(1.5)}
             initial="hidden"
             animate="visible" className="my-2 max-w-xl py-6  text-xl text-rose-700 font-light tracking-tighter"> {HERO_CONTENT}</motion.p>
