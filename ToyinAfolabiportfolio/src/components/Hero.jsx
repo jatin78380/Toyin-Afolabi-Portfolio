@@ -30,14 +30,19 @@ export const Hero = () => {
             variants={container(0)}
             initial="hidden"
             animate="visible"
-            className=" text-xl text-indigo-600 pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-6xl">Toyin Afolabi </motion.h1>
+            className=" text-xl text-neutral-900 pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-6xl">Toyin Afolabi </motion.h1>
+            <motion.h1 
+            variants={container(0.5)}
+            initial="hidden"
+            animate="visible"
+            className=" text-xl text-neutral-900 pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-6xl">About Me </motion.h1>
             <motion.span  variants={container(1)}
             initial="hidden"
-            animate="visible" className="bg-gradient-to-r from-pink-300 via slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent">Social Media Manager / Digital Startegist | Web3 Educator | Coach.
+            animate="visible" className="text-neutral-900 text-3xl tracking-tight text-transparent">Social Media Manager / Digital Startegist | Web3 Educator | Coach.
 </motion.span>
             < motion.p  variants={container(1.5)}
             initial="hidden"
-            animate="visible" className="my-2 max-w-xl py-6  text-xl text-rose-700 font-light tracking-tighter"> {HERO_CONTENT}</motion.p>
+            animate="visible" className="my-2 max-w-xl py-6  text-xl text-neutral-800  tracking-tighter"> {HERO_CONTENT}</motion.p>
           </div>
           </div>
           

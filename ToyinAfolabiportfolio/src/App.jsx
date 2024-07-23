@@ -7,21 +7,23 @@ import {About} from './components/About'
 import { Hero } from './components/Hero'
 import { Skills } from './components/Skills'
 import { Testimonials } from './components/Testimonaials'
+import { Brands } from './components/Brands'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900">
+    <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-blue-700 selection:text-black-800">
     <div className="fixed top-0 -z-10 h-full w-full">
-    <div class="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)]"></div>
+    <div class="absolute inset-0 -z-10 h-full w-full bg-white "></div>
     </div>
        <div className='container mx-auto px-8'>
        <Navbar/>
         <Hero/>
         <About/>
         <Skills/>
+        <Brands/>
         <Testimonials/>
        </div>
        
