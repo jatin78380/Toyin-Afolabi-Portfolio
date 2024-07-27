@@ -14,7 +14,7 @@ export const Brands = () => {
                 transition={{ duration: 0.5 }}
                 className="my-20 text-center text-neutral-900 text-4xl"
             >
-                Brands I have worked
+               Portfolio
             </motion.h1>
             <div>
                 <div className="mb-8 flex flex-wrap lg:justify-center">

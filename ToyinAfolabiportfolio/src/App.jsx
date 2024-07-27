@@ -9,6 +9,7 @@ import { Skills } from './components/Skills'
 import { Testimonials } from './components/Testimonaials'
 import { Brands } from './components/Brands'
 
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -25,6 +26,7 @@ function App() {
         <Skills/>
         <Brands/>
         <Testimonials/>
+        
        </div>
        
         
