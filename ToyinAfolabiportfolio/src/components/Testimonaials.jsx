@@ -1,5 +1,5 @@
 import React from 'react';
-import './Testimonials.css'; // Make sure this CSS file is imported
+import './Testimonials.css'; 
 import Testimonialone from "../assets/testimonials/testimonial1.png";
 import Testimonialtwo from "../assets/testimonials/testimonial2.png";
 import Testimonialthree from "../assets/testimonials/testimonial3.png";
@@ -22,12 +22,12 @@ const TestimonialCard = ({ name, image, text }) => {
 export const Testimonials = () => {
   const testimonials = [
     {
-      name: "Banjo Florence - Flora B Event",
+      name: "Banjo Florence",
       image: Testimonialone,
       text: `I really love what your student did. It was a pleasure of working with her to optimize my LinkedIn bio, and I couldn’t be more pleased. She brought a wealth of knowledge and a keen eye for detail, transforming my profile into a compelling and professional representation of my skills and aspirations. She took the time to understand my background and goals, and provided insightful suggestions that truly elevated my profile. Thank you so so much. Well done Deborah, she wouldn’t have known so much without your tutorials.`,
     },
     {
-      name: "Grace Harrison - Flora B Event",
+      name: "Grace Harrison ",
       image: Testimonialtwo,
       text: `I recently had the pleasure of working with Toyin Afolabi as one of the facilitators for the EmpowerHER "social media management classes," a Skill-up program aimed at empowering women. Toyin's contribution to the program was nothing short of exceptional. She brought a wealth of knowledge and passion to her sessions, ensuring that every participant not only understood the concepts but also could apply them practically. Her dedication to seeing that the students learned and grew was truly inspiring. Toyin's teaching style was engaging, clear, and supportive, making complex topics accessible and interesting. The feedback from the participants was overwhelmingly positive, with many praising Toyin for her enthusiasm and her ability to make the learning process enjoyable and effective. Her commitment to empowering others through education is evident, and she has undoubtedly made a lasting impact on everyone involved in the program. Toyin Afolabi is an outstanding educator and a true asset to any training program.`,
     },

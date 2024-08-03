@@ -25,6 +25,12 @@
     text-overflow: ellipsis;
     white-space: normal; /* Allows text to wrap */
   }
+  .testimonial-card h2 {
+    margin-top: 8px;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: normal; /* Allows text to wrap */
+  }
   @keyframes move {
     from {
       transform: translateX(0);
