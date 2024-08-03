@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import Testimonialone from "../assets/testimonials/testimonial1.png";
 import Testimonialtwo from "../assets/testimonials/testimonial2.png";
+import Testimonialthree from "../assets/testimonials/testimonial3.png";
+import Testimonialfour from "../assets/testimonials/testimonial4.png";
 
 const TestimonialCard = ({ name, image, text }) => {
   return (
@@ -28,6 +30,21 @@ export const Testimonials = () => {
       image: Testimonialtwo,
       text: `I recently had the pleasure of working with Toyin Afolabi as one of the facilitators for the EmpowerHER "social media management classes," a Skill-up program aimed at empowering women. Toyin's contribution to the program was nothing short of exceptional. She brought a wealth of knowledge and passion to her sessions, ensuring that every participant not only understood the concepts but also could apply them practically. Her dedication to seeing that the students learned and grew was truly inspiring. Toyin's teaching style was engaging, clear, and supportive, making complex topics accessible and interesting. The feedback from the participants was overwhelmingly positive, with many praising Toyin for her enthusiasm and her ability to make the learning process enjoyable and effective. Her commitment to empowering others through education is evident, and she has undoubtedly made a lasting impact on everyone involved in the program. Toyin Afolabi is an outstanding educator and a true asset to any training program.`,
     },
+    {
+      name: "Oyindamola taiwo",
+      image: Testimonialthree,
+      text: ` I really enjoyed your class ma and I learned a lot. Through your teaching I was able to know how to optimize  social media accounts, especially Linkedin and Instagram. 
+I was also able to know the basic differences between all social media platforms. Thank you so much ma. The classes were great.`,
+    },
+    {
+      name: "Oyindamola taiwo",
+      image: Testimonialfour,
+      text: `It has been a moment of insights and impacts with you through out this learning period.
+You handled every topic meticulously and with so much elaboration.
+This class opened my eyes to alot of things concerning social media management, and I'm really grateful for that.
+
+Thank you for your time, effort and patience, Deborah..`,
+    }
   ];
 
   return (
@@ -47,13 +64,13 @@ export const Testimonials = () => {
             key={index}
             animate={{
               x: ['-100%', '100%'],
-              opacity: [1, 1, 0, 0],
+              // opacity: [1, 1, 0, 0],
             }}
             transition={{
               duration: 10, // Increase duration to make the animation smoother
               ease: 'linear',
               repeat: Infinity,
-              delay: index * 5, // Adjust delay to ensure simultaneous movement
+              delay: index * 15, // Adjust delay to ensure simultaneous movement
             }}
             className="w-full md:w-1/2 p-4"
           >

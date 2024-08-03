@@ -8,6 +8,8 @@ import { Hero } from './components/Hero'
 import { Skills } from './components/Skills'
 import { Testimonials } from './components/Testimonaials'
 import { Brands } from './components/Brands'
+import Contact from './components/Contact'
+
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
         <Skills/>
         <Brands/>
         <Testimonials/>
+        <Contact/>
+       
         
        </div>
        
