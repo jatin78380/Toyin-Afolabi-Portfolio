@@ -47,7 +47,7 @@ export const Testimonials = () => {
             key={index}
             animate={{
               x: ['-100%', '100%'],
-              opacity: [1, 1, 1, 0],
+              opacity: [1, 1, 0, 0],
             }}
             transition={{
               duration: 10, // Increase duration to make the animation smoother
