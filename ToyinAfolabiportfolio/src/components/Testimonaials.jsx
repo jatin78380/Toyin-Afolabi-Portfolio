@@ -37,7 +37,7 @@ export const Testimonials = () => {
 I was also able to know the basic differences between all social media platforms. Thank you so much ma. The classes were great.`,
     },
     {
-      name: "Oyindamola taiwo",
+      name: "Priscillia tochukwu",
       image: Testimonialfour,
       text: `It has been a moment of insights and impacts with you through out this learning period.
 You handled every topic meticulously and with so much elaboration.
