@@ -30,7 +30,13 @@ const Contact = () => {
         className="my-20 text-center text-neutral-800 text-4xl"
       >Get In Touch
       </motion.h1>
-      <h1 className="text-3xl font-bold mb-10 text-neutral-800">Contact Me</h1>
+      <motion.h1
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 1.5 }}
+        className="my-20 text-center text-neutral-800 text-4xl"
+      >Contact Me
+      </motion.h1>
       <ContactCard
         icon={<FaEnvelope size={30} />}
         title="Email"
