@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 
 const ContactCard = ({ icon, title, detail, additionalDetail, link }) => {
   return (
-    <div className="bg-orange-500 rounded-lg p-6 mb-4 flex flex-col items-center text-white">
+    <div className="bg-cyan-200 rounded-lg p-6 mb-4 flex flex-col items-center text-black">
       <div className="mb-2">{icon}</div>
       <h3 className="text-lg font-bold">{title}</h3>
       <p className="text-base">{detail}</p>
       {additionalDetail && link ? (
-        <a href={link} className="text-sm text-gray-200" target="_blank" rel="noopener noreferrer">
+        <a href={link} className="text-sm text-black-900" target="_blank" rel="noopener noreferrer">
           {additionalDetail}
         </a>
       ) : null}
@@ -22,7 +22,7 @@ const Contact = () => {
   const linkedinUrl = "https://www.linkedin.com/in/toyin-afolabi-/"; // Replace with your LinkedIn profile URL
 
   return (
-    <div className="min-h-screen text-black flex flex-col items-center pt-10">
+    <div className="min-h-screen  text-black flex flex-col items-center pt-10">
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -37,7 +37,7 @@ const Contact = () => {
         className="my-20 text-center text-neutral-800 text-4xl"
       >Contact Me
       </motion.h1>
-      <ContactCard
+      <ContactCard 
         icon={<FaEnvelope size={30} />}
         title="Email"
         detail={email}

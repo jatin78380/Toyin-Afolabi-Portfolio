@@ -6,7 +6,7 @@
   
   .moving-cards {
     display: flex;
-    animation: move 20s linear infinite;
+    animation: move 39s linear infinite;
   }
   
   .testimonial-card {

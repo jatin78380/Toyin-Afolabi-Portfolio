@@ -7,7 +7,17 @@ import Brandfive from "../assets/brands/brand5.png";
 
 export const Brands = () => {
     return (
-        <div className="border-b border-neutral-900 pb-4"> 
+        <div className="border-b align-content center border-neutral-900 pb-4"> 
+        <div className="text-center">
+                        <h2 className="my-2 text-black font-bold">Industries (Brands I Have Worked With)</h2>
+                        <li className="text-black">Fashion</li>
+                            <li className="text-black"> Web3 </li>
+                          <li className="text-black"> Fintech </li>
+                         <li className="text-black"> Marketing Agencies </li>
+                        <li className="text-black"> Educational Consulting (Study Abroad) </li>
+                        <li className="text-black"> Business Consulting </li>
+                         <li className="text-black"> Religious Organizations</li>
+                    </div>
             <motion.h1
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -100 }}
@@ -131,6 +141,7 @@ export const Brands = () => {
                             Increased followers from 0 to 300 within one month on a social media platform.
                         </h6>
                     </motion.div>
+                    
                 </div>
             </div>
         </div>
