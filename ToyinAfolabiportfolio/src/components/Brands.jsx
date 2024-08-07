@@ -9,7 +9,10 @@ export const Brands = () => {
     return (
         <div className="border-b align-content center border-neutral-900 pb-4"> 
         <div className="text-center">
-                        <h2 className="my-2 text-black font-bold">Industries (Brands I Have Worked With)</h2>
+                        <motion.h1
+                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: -100 }}
+                transition={{ duration: 0.5 }}className="my-11 text-black font-bold">Industries (Brands I Have Worked With)</motion.h1>
                         <li className="text-black">Fashion</li>
                             <li className="text-black"> Web3 </li>
                           <li className="text-black"> Fintech </li>
