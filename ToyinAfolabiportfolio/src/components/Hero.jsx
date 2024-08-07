@@ -22,16 +22,15 @@ export const Hero = () => {
            animate={{y:0,opacity: 1}} 
            transition={{duration: 1, delay: 0.5}}
            src={Profile} className="rounded-xl bg-cyan-200 " alt="profilepicture"/>
-             <motion.h1 
-            variants={container(0)}
-            initial="hidden"
-            animate="visible"
-            className=" text-xl text-neutral-900 pb-10 text-6xl font-bold tracking-tight lg:mt-4 lg:text-6xl">Toyin Afolabi </motion.h1>
           </div>
           </div>
           <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
-          
+            <motion.h1 
+            variants={container(0)}
+            initial="hidden"
+            animate="visible"
+            className=" text-xl text-neutral-900 pb-10 text-6xl font-bold tracking-tight lg:mt-4 lg:text-6xl">Toyin Afolabi </motion.h1>
             <motion.h1 
             variants={container(0.5)}
             initial="hidden"
