@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Testimonials.css'; 
 import Testimonialone from "../assets/testimonials/testimonial1.png";
 import Testimonialtwo from "../assets/testimonials/testimonial2.png";
@@ -43,22 +43,32 @@ export const Testimonials = () => {
     }
   ];
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+  };
+
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div className="border-b border-neutral-900 pb-4 relative">
       <h1 className="my-20 text-center text-neutral-800 text-4xl">Client Testimonials</h1>
 
+      <button className="slider-button left" onClick={handlePrev}>‹</button>
       <div className="card-container">
-        <div className="moving-cards">
+        <div className="moving-cards" style={{ transform: `translateX(-${currentIndex * 320}px)` }}>
           {testimonials.map((testimonial, index) => (
             <TestimonialCard key={index} {...testimonial} />
           ))}
-        </div>
-        <div className="moving-cards">
           {testimonials.map((testimonial, index) => (
             <TestimonialCard key={index} {...testimonial} />
           ))}
         </div>
       </div>
+      <button className="slider-button right" onClick={handleNext}>›</button>
     </div>
   );
 };
